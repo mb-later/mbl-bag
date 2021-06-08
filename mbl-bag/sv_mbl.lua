@@ -7,7 +7,7 @@ RLCore.Functions.CreateUseableItem("bag", function (source, item)
     local _source = source
     local _char = RLCore.Functions.GetPlayer(_source)
     if _char and GetItem(source, item.name).count >= 1 then
-        TriggerClientEvent("mbl:bag:open",_source, item)
+        TriggerClientEvent("mbl:bag:openbag",_source, item)
     else
         print("wtf?")
     end
